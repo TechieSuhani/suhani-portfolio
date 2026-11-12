@@ -57,10 +57,12 @@ CONTACT_TO=work.suhanimau@gmail.com
 Use a Gmail App Password, not your normal Gmail password. If email variables are not configured, the API validates the message and logs it to the server console instead of sending an email.
 
 ## Production deployment
-- On Render, create a Blueprint from this repository and use the root `render.yaml` file. It creates the static frontend and Express API.
-- The frontend is available at `https://suhani-portfolio.onrender.com`; the API health check is at `https://suhani-portfolio-api.onrender.com/api/health`.
-- The free API service may spin down after inactivity, so its first request can take longer while it starts.
-- To enable contact-form email delivery, add `EMAIL_USER`, `EMAIL_PASS`, and `CONTACT_TO` to the API service's environment in Render. Never commit `.env`.
+- Create one Node.js Web Service for this repository on Render, with the repository root as the root directory.
+- Build command: `npm ci --prefix client && npm run build --prefix client && npm ci --prefix server`
+- Start command: `npm start --prefix server`
+- Set `NODE_VERSION` to `22.12.0` and the health check path to `/api/health`.
+- The Express server serves the built React frontend and the API from the same origin. The free web service may spin down after inactivity.
+- To enable contact-form email delivery, add `EMAIL_USER`, `EMAIL_PASS`, and `CONTACT_TO` to the service's environment in Render. Never commit `.env`.
 
 ## Before publishing
 1. Verify every project description and date.

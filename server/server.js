@@ -4,10 +4,13 @@ import helmet from 'helmet'
 import dotenv from 'dotenv'
 import nodemailer from 'nodemailer'
 import rateLimit from 'express-rate-limit'
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 
 dotenv.config()
 const app = express()
 const PORT = process.env.PORT || 5000
+const clientDist = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../client/dist')
 
 app.use(helmet())
 app.use(cors({ origin: process.env.CLIENT_ORIGIN || 'http://localhost:5173' }))
@@ -52,4 +55,12 @@ app.post('/api/contact', async (req, res) => {
   }
 })
 
-app.listen(PORT, () => console.log(`Portfolio API running on http://localhost:${PORT}`))
+app.use(express.static(clientDist))
+app.use((req, res, next) => {
+  if (req.method !== 'GET' || req.path.startsWith('/api/')) return next()
+  res.sendFile(path.join(clientDist, 'index.html'), error => {
+    if (error) next(error)
+  })
+})
+
+app.listen(PORT, '0.0.0.0', () => console.log(`Portfolio app running on port ${PORT}`))
