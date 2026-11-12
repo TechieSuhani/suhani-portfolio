@@ -57,11 +57,10 @@ CONTACT_TO=work.suhanimau@gmail.com
 Use a Gmail App Password, not your normal Gmail password. If email variables are not configured, the API validates the message and logs it to the server console instead of sending an email.
 
 ## Production deployment
-- Frontend: Vercel or Netlify. Set the frontend API base URL if hosting the API separately.
-- Backend: Render, Railway, or another Node.js host.
-- Set `CLIENT_ORIGIN` to your deployed frontend URL.
-- Set `VITE_API_URL` in the frontend deployment to your backend URL (for example `https://your-api.onrender.com`).
-- Add all environment variables in your hosting dashboard. Never commit `.env`.
+- On Render, create a Blueprint from this repository and use the root `render.yaml` file. It creates the static frontend and Express API.
+- The frontend is available at `https://suhani-portfolio.onrender.com`; the API health check is at `https://suhani-portfolio-api.onrender.com/api/health`.
+- The free API service may spin down after inactivity, so its first request can take longer while it starts.
+- To enable contact-form email delivery, add `EMAIL_USER`, `EMAIL_PASS`, and `CONTACT_TO` to the API service's environment in Render. Never commit `.env`.
 
 ## Before publishing
 1. Verify every project description and date.
