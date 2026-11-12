@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" fill="none">
+  <defs>
+    <linearGradient id="background" x1="30" y1="12" x2="610" y2="350" gradientUnits="userSpaceOnUse"><stop stop-color="#29214F"/><stop offset="1" stop-color="#102E43"/></linearGradient>
+    <linearGradient id="headphones" x1="180" y1="70" x2="455" y2="300" gradientUnits="userSpaceOnUse"><stop stop-color="#C1AEFF"/><stop offset="1" stop-color="#67D8D0"/></linearGradient>
+    <linearGradient id="mic" x1="304" y1="155" x2="380" y2="316" gradientUnits="userSpaceOnUse"><stop stop-color="#D5C9FF"/><stop offset="1" stop-color="#789BFF"/></linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(178 0 0 126 320 180)" gradientUnits="userSpaceOnUse"><stop stop-color="#A78BFA" stop-opacity=".24"/><stop offset="1" stop-color="#A78BFA" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="640" height="360" rx="24" fill="url(#background)"/>
+  <rect width="640" height="360" rx="24" fill="url(#glow)"/>
+  <circle cx="89" cy="80" r="2" fill="#D5C9FF"/><circle cx="541" cy="84" r="3" fill="#6FD9D0"/><circle cx="520" cy="282" r="2" fill="#C1AEFF"/><circle cx="123" cy="274" r="3" fill="#6FD9D0"/>
+  <path d="M167 177c0-85 69-154 153-154s153 69 153 154" stroke="url(#headphones)" stroke-linecap="round" stroke-width="23" opacity=".92"/>
+  <rect x="148" y="160" width="54" height="111" rx="26" fill="#111626" stroke="url(#headphones)" stroke-width="8"/>
+  <rect x="438" y="160" width="54" height="111" rx="26" fill="#111626" stroke="url(#headphones)" stroke-width="8"/>
+  <rect x="286" y="126" width="68" height="126" rx="31" fill="#14192B" stroke="url(#mic)" stroke-width="6"/>
+  <path d="M302 153h36m-36 19h36m-36 19h36m-36 19h36" stroke="#BFB2FF" stroke-linecap="round" stroke-width="6" opacity=".8"/>
+  <path d="M276 235c0 25 20 45 44 45s44-20 44-45m-44 45v34m-29 0h58" stroke="#9BEBDD" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+  <path d="M242 155v75m-18-58v42m-18-27v12m192-44v75m18-58v42m18-27v12" stroke="#A78BFA" stroke-linecap="round" stroke-width="6" opacity=".75"/>
+  <circle cx="320" cy="316" r="5" fill="#6FD9D0"/><circle cx="300" cy="316" r="3" fill="#A78BFA"/><circle cx="340" cy="316" r="3" fill="#A78BFA"/>
+</svg>

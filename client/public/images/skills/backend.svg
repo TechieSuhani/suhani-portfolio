@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="210" viewBox="0 0 320 210" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="23" y1="7" x2="300" y2="204" gradientUnits="userSpaceOnUse"><stop stop-color="#153F50"/><stop offset="1" stop-color="#22234C"/></linearGradient>
+    <linearGradient id="server" x1="74" y1="48" x2="210" y2="164" gradientUnits="userSpaceOnUse"><stop stop-color="#6FD9D0"/><stop offset="1" stop-color="#789BFF"/></linearGradient>
+  </defs>
+  <rect width="320" height="210" rx="20" fill="url(#bg)"/>
+  <circle cx="252" cy="46" r="54" fill="#6FD9D0" fill-opacity=".1"/>
+  <rect x="43" y="39" width="137" height="50" rx="12" fill="#10182A" fill-opacity=".72" stroke="#6FD9D0" stroke-opacity=".4"/>
+  <rect x="43" y="101" width="137" height="50" rx="12" fill="#10182A" fill-opacity=".72" stroke="#A78BFA" stroke-opacity=".45"/>
+  <rect x="59" y="55" width="21" height="18" rx="5" fill="url(#server)" fill-opacity=".85"/>
+  <rect x="59" y="117" width="21" height="18" rx="5" fill="#A78BFA" fill-opacity=".82"/>
+  <rect x="91" y="57" width="67" height="6" rx="3" fill="#FFFFFF" fill-opacity=".55"/>
+  <rect x="91" y="69" width="46" height="5" rx="2.5" fill="#FFFFFF" fill-opacity=".2"/>
+  <rect x="91" y="119" width="67" height="6" rx="3" fill="#FFFFFF" fill-opacity=".55"/>
+  <rect x="91" y="131" width="46" height="5" rx="2.5" fill="#FFFFFF" fill-opacity=".2"/>
+  <circle cx="166" cy="62" r="4" fill="#6FD9B0"/><circle cx="166" cy="124" r="4" fill="#6FD9B0"/>
+  <path d="M183 95h42m-10-10 10 10-10 10" stroke="#C1B4FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+  <rect x="230" y="72" width="54" height="48" rx="13" fill="#A78BFA" fill-opacity=".2" stroke="#A78BFA" stroke-opacity=".5"/>
+  <path d="m247 86-8 10 8 10m19-20 8 10-8 10m-3-22-8 24" stroke="#D5CAFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+  <circle cx="267" cy="156" r="5" fill="#6FD9D0"/><circle cx="51" cy="171" r="4" fill="#A78BFA"/>
+</svg>
