@@ -190,6 +190,10 @@ function App() {
             <p>Currently pursuing my MCA at G.L. Bajaj Institute of Technology and Management, while building projects that strengthen my skills in modern web development. I'm also an SAP Certified Back-End Developer with an interest in enterprise technologies.</p>
             <div className="about-tags"><span>Problem solver</span><span>Continuous learner</span><span>Product mindset</span></div>
           </motion.div>
+          <motion.figure className="about-portrait glass-card" {...reveal}>
+            <img src="/images/suhani-profile.jpeg" alt="Suhani Maurya standing outside G.L. Bajaj Institute of Technology and Management" loading="lazy" decoding="async"/>
+            <figcaption><strong>Suhani Maurya</strong><span>Developer · MCA Student</span></figcaption>
+          </motion.figure>
           <motion.div className="about-side" {...reveal}>
             <div className="mini-stat glass-card"><span className="stat-icon"><Code2/></span><strong>5+</strong><span>Featured projects</span></div>
             <div className="mini-stat glass-card"><span className="stat-icon"><GraduationCap/></span><strong>MCA</strong><span>Postgraduate studies</span></div>
