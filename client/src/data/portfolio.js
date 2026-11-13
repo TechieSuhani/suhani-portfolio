@@ -8,7 +8,7 @@ export const profile = {
   location: 'India',
   github: 'https://github.com/TechieSuhani',
   linkedin: 'https://www.linkedin.com/in/suhanimau/',
-  resume: '/Suhani-Maurya-Resume.pdf'
+  resume: 'https://drive.google.com/file/d/1EXxIPyxbZcpiGyF5yNfyYcH1-dhGtivQ/view?usp=drivesdk'
 }
 
 export const skillGroups = [

@@ -149,7 +149,7 @@ function App() {
           <motion.p className="hero-description" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .55 }}>{profile.intro}</motion.p>
           <motion.div className="hero-buttons" initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .65 }}>
             <a className="btn btn-primary" href="#projects">Explore my work <ArrowUpRight size={17}/></a>
-            <a className="btn btn-ghost" href={profile.resume} download><Download size={16}/> Download resume</a>
+            <a className="btn btn-ghost" href={profile.resume} target="_blank" rel="noreferrer"><Download size={16}/> Download resume</a>
           </motion.div>
           <motion.div className="hero-socials" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .8 }}>
             <a href={profile.github} target="_blank" rel="noreferrer"><GitBranch size={17}/> GitHub</a><a href={profile.linkedin} target="_blank" rel="noreferrer"><BriefcaseBusiness size={17}/> LinkedIn</a><span><MapPin size={16}/> {profile.location}</span>
